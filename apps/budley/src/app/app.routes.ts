@@ -4,7 +4,8 @@ import { DashboardViewComponent } from './views/dashboard-view/dashboard-view.co
 import { SettingsViewComponent } from './views/settings-view/settings-view.component';
 
 export const appRoutes: Route[] = [
-    { path: '', redirectTo: 'landing', pathMatch: 'full'},
+    { path: 'landing', redirectTo: '', pathMatch: 'full'},
+    { path: '', component: LandingViewComponent },
     { path: 'landing', component: LandingViewComponent },
     { path: 'dashboard', component: DashboardViewComponent },
     { path: 'settings', component: SettingsViewComponent },
