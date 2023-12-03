@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GrowsViewComponent } from './grows-view.component';
+import { LandingViewComponent } from './landing-view.component';
 
-describe('GrowsViewComponent', () => {
-  let component: GrowsViewComponent;
-  let fixture: ComponentFixture<GrowsViewComponent>;
+describe('LandingViewComponent', () => {
+  let component: LandingViewComponent;
+  let fixture: ComponentFixture<LandingViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GrowsViewComponent],
+      imports: [LandingViewComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GrowsViewComponent);
+    fixture = TestBed.createComponent(LandingViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

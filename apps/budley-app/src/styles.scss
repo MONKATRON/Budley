@@ -1,0 +1,28 @@
+html,
+body {
+    background: #1b3d30;
+    background-image: linear-gradient(to top, #00180d, #0c2319, #143025, #1b3d30, #234a3d);
+    color: beige;
+    text-shadow: 1px 1px 3px #0a1705;
+
+    * {
+        box-sizing: border-box;
+    }
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 98vh;
+    min-height: 98vh;
+
+    h1, h2, h3, h4, h5 {
+        font-family: "neulis-cursive", serif;
+        font-weight: 500;
+    }
+}
