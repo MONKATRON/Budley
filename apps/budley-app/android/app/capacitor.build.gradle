@@ -9,11 +9,8 @@ android {
 
 apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
-<<<<<<< HEAD
+    implementation project(':capacitor-community-sqlite')
     implementation project(':capacitor-splash-screen')
-=======
-
->>>>>>> cfd45eb223b67b07b42ae59ecd449173a640bd63
 
 }
 

@@ -1,0 +1,30 @@
+:host {
+    max-width: 80%;
+    padding: 1rem;
+
+    * {
+        text-shadow: none;
+    }
+
+    .mdc-dialog__content {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        .mat-mdc-form-field {
+            width: 100%;
+        }
+    }
+    
+    .mdc-dialog__title {
+        width: 100% !important;
+        background-image: linear-gradient(to top, #00180d, #0c2319, #143025, #1b3d30, #234a3d);
+        text-align: center;
+        font-family: "neulis-cursive", serif;
+        font-weight: 600;
+        text-shadow: none;
+        color: #f5f5dc;
+    }
+}

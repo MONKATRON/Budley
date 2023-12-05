@@ -1,18 +1,36 @@
 PODS:
   - Capacitor (5.5.1):
     - CapacitorCordova
+  - CapacitorCommunitySqlite (5.4.2-2):
+    - Capacitor
+    - SQLCipher
+    - ZIPFoundation
   - CapacitorCordova (5.5.1)
   - CapacitorSplashScreen (5.0.6):
     - Capacitor
+  - SQLCipher (4.5.5):
+    - SQLCipher/standard (= 4.5.5)
+  - SQLCipher/common (4.5.5)
+  - SQLCipher/standard (4.5.5):
+    - SQLCipher/common
+  - ZIPFoundation (0.9.16)
 
 DEPENDENCIES:
   - "Capacitor (from `../../../../node_modules/@capacitor/ios`)"
+  - "CapacitorCommunitySqlite (from `../../../../node_modules/@capacitor-community/sqlite`)"
   - "CapacitorCordova (from `../../../../node_modules/@capacitor/ios`)"
   - "CapacitorSplashScreen (from `../../../../node_modules/@capacitor/splash-screen`)"
+
+SPEC REPOS:
+  trunk:
+    - SQLCipher
+    - ZIPFoundation
 
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../../../node_modules/@capacitor/ios"
+  CapacitorCommunitySqlite:
+    :path: "../../../../node_modules/@capacitor-community/sqlite"
   CapacitorCordova:
     :path: "../../../../node_modules/@capacitor/ios"
   CapacitorSplashScreen:
@@ -20,9 +38,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Capacitor: 9da0a2415e3b6098511f8b5ffdb578d91ee79f8f
+  CapacitorCommunitySqlite: 603b21de9e0503d44c203da080671b32d9a6e6d1
   CapacitorCordova: e128cc7688c070ca0bfa439898a5f609da8dbcfe
   CapacitorSplashScreen: 5fa2ab5e46cf5cc530cf16a51c80c7a986579ccd
+  SQLCipher: f2e96b3822e3006b379181a0e4fd145f6de29b56
+  ZIPFoundation: d170fa8e270b2a32bef9dcdcabff5b8f1a5deced
 
-PODFILE CHECKSUM: edf02cf4d9af3729cd471092703137e22655c2a3
+PODFILE CHECKSUM: dc0816ab004864ccad531459aca309b15b51eb6f
 
 COCOAPODS: 1.14.3
