@@ -14,5 +14,4 @@ export const appRoutes: Route[] = [
     { path: 'grow', component: GrowViewComponent },
     { path: 'camera', component: CameraViewComponent },
     { path: 'settings', component: SettingsViewComponent },
-
 ];

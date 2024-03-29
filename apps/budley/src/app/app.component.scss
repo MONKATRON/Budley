@@ -1,0 +1,21 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-family: "neulis-cursive", serif;
+    font-weight: 500;
+
+    #BUD_Logo {
+        display: block;
+        width: 100px;
+        height: auto;
+    }
+
+    h1 {
+        font-family: "neulis-cursive", serif !important;
+        font-weight: 500;
+    }
+}

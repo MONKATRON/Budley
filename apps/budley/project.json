@@ -8,16 +8,27 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/budley",
         "index": "apps/budley/src/index.html",
         "browser": "apps/budley/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/budley/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/budley/src/favicon.ico", "apps/budley/src/assets"],
-        "styles": ["apps/budley/src/styles.scss"],
+        "assets": [
+          "apps/budley/src/favicon.ico",
+          "apps/budley/src/assets"
+        ],
+        "styles": [
+          "@angular/material/prebuilt-themes/purple-green.css",
+          "apps/budley/src/assets/BudleyAMTheme.scss",
+          "apps/budley/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -64,14 +75,21 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/budley/**/*.ts", "apps/budley/**/*.html"]
+        "lintFilePatterns": [
+          "apps/budley/**/*.ts",
+          "apps/budley/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/budley/jest.config.ts"
       }
