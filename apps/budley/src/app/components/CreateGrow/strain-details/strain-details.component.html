@@ -1,0 +1,35 @@
+<form [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>Seedbank</mat-label>
+    <input matInput formControlName="seedbank">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Strain</mat-label>
+    <input matInput formControlName="strain">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Flower Time</mat-label>
+    <input matInput type="number" formControlName="flowerTime">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Species</mat-label>
+    <mat-select formControlName="species">
+      <mat-option value="Sativa Dominant">Sativa Dominant</mat-option>
+      <mat-option value="Indica Dominant">Indica Dominant</mat-option>
+      <mat-option value="Hybrid">Hybrid</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Flowering Type</mat-label>
+    <mat-select formControlName="flowering">
+      <mat-option value="Photoperiod">Photoperiod</mat-option>
+      <mat-option value="Auto">Auto</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-checkbox formControlName="feminized">Feminized</mat-checkbox>
+</form>

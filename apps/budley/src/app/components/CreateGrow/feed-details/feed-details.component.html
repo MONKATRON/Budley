@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Type of Feed</mat-label>
+      <mat-select formControlName="feedType">
+        <mat-option value="Manual">Manual</mat-option>
+        <mat-option value="Drip">Drip</mat-option>
+        <mat-option value="Hydroponics">Hydroponics</mat-option>
+        <mat-option value="Aeroponics">Aeroponics</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+  

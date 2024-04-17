@@ -3,15 +3,44 @@
   height:100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  // background-image: linear-gradient(to top, #00180d, #0c2319, #143025, #1b3d30, #234a3d);
 
   #window {
     display: flex;
     width: 100vw;
-    padding-top: 4rem;
-    
   }
+
+  #header {
+    display: block;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-family: "neulis-cursive", serif;
+    font-weight: 500;
+    clear: both;
+    width: 100vw;
+    height: max-content;
+
+    #BUD_Logo {
+      display: block;
+        width: 70px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        font-family: "neulis-cursive", serif !important;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
   mat-card.dashboard-card{
     width: 800px;
@@ -85,8 +114,8 @@
             display: block;
             background: url("/assets/SAT_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -95,8 +124,8 @@
             display: block;
             background: url("/assets/IND_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -105,8 +134,8 @@
             display: block;
             background: url("/assets/HYB_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -115,8 +144,8 @@
             display: block;
             background: url("/assets/RUD_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -127,8 +156,8 @@
             display: block;
             background: url("/assets/INDO_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -137,8 +166,8 @@
             display: block;
             background: url("/assets/OD_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -147,8 +176,8 @@
             display: block;
             background: url("/assets/GH_Icon.svg") no-repeat;
             background-size: contain;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             float: left;
             margin: 0 6px 0 0;
           }
@@ -177,10 +206,13 @@
           align-items: center;
           justify-content: left;
           line-height: 30px;
-          margin-right: .5rem;
+          margin-right: 1rem;
+          font-family: "neulis-cursive", serif;
+          font-weight: 500;
           .strainicon, .inouticon {
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
+            margin-bottom: 10px;
           }
         }
 
@@ -225,14 +257,7 @@
   }
   
   #createGrowButon {
-    display: block;
-    margin: .5rem auto 1rem auto;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    color: #fff;
-    background-color: #546A2F;
-    font-size: 2rem;
+    margin: 0 auto 1rem auto;
   }
 
 }

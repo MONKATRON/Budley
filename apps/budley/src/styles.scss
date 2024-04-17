@@ -1,10 +1,9 @@
 html,
 body {
+
     background: #1b3d30;
-    background-image: linear-gradient(to top, #00180d, #0c2319, #143025, #1b3d30, #234a3d);
     color: beige;
     text-shadow: 1px 1px 3px #0a1705;
-
     * {
         box-sizing: border-box;
     }
@@ -26,27 +25,26 @@ body {
         font-weight: 500;
     }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-#header {
-position: absolute;
-top: 0;
-    box-sizing: border-box;
-    padding: 1rem;
-    font-family: "neulis-cursive", serif;
-    font-weight: 500;
-
-    #BUD_Logo {
-        width: 70px;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    * {
-        font-family: "neulis-cursive", serif !important;
-        font-weight: 500;
-        font-size: 20px;
-        text-align: center;
-    }
+html, body { 
+    height: 100%;
+    background: transparent; 
 }
+
+
+html {
+    height: 100vh;
+    max-height: 100vh !important;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    top:0;
+    background-image: linear-gradient(to top, #00180d, #0c2319, #143025, #1b3d30, #234a3d) !important;
+
+    overflow: hidden;
+    overflow-y: scroll !important; 
+}
+body { 
+    display:block; 
+    height: auto;
+}
+

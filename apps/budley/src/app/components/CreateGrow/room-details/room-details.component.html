@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Room Type</mat-label>
+      <mat-select formControlName="roomType">
+        <mat-option value="Tent">Tent</mat-option>
+        <mat-option value="Room">Room</mat-option>
+        <mat-option value="Greenhouse">Greenhouse</mat-option>
+        <mat-option value="Outdoor">Outdoor</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Room Size (Length)</mat-label>
+      <input matInput type="number" formControlName="roomLength">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Room Size (Width)</mat-label>
+      <input matInput type="number" formControlName="roomWidth">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Room Size (Height)</mat-label>
+      <input matInput type="number" formControlName="roomHeight">
+    </mat-form-field>
+  </form>

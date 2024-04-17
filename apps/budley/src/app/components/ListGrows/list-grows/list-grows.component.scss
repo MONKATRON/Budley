@@ -1,0 +1,234 @@
+:host {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+  
+    #window {
+      display: flex;
+      width: 100vw;      
+
+    }
+  
+    mat-card.dashboard-card{
+      width: 800px;
+      max-width: 80%;
+      border-radius: .8rem;
+      margin: 0 auto;
+      padding: 0;
+      background-color: rgba(0,0,0,0.2);
+  
+      .mat-mdc-card-header{
+        box-sizing: border-box;
+        background-color: darkolivegreen !important;
+        background: darkolivegreen !important;
+        box-sizing: border-box;    
+        margin: 0;  
+        height: 60px;
+        border-radius: .8rem .8rem 0 0;
+        margin-bottom: .5rem;
+        mat-card-title {
+          font-family: "neulis-cursive", serif;
+          font-weight: 500;
+        }
+      }
+  
+    }
+    
+    mat-list-item {
+  
+      height: auto;
+      padding: 0;
+      box-sizing: border-box;
+      border-radius: .4rem;
+      margin-bottom: 2px;
+  
+      mat-card.list-card {
+  
+        box-sizing: border-box;
+        width: 100%;
+        height: 114px;
+        margin: 0 0 .2rem 0;
+        padding: 1rem;
+        background-color: rgba(245, 245, 245,.1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        border: solid thin #333;
+  
+        .sec1 {
+          display: flex;
+          flex-direction: column;
+          text-align: left; 
+  
+          .icongroup {
+  
+            display: flex;
+            flex-direction: row;
+  
+            p {
+              margin: 0;
+            }
+    
+            .Sativa_ico, .Indica_ico, .Hybrid_ico, .Rudalis_ico, .Indoor_ico, .OD_ico {
+              font-family: "neulis-cursive", serif;
+              font-weight: 500;
+            }
+    
+            
+            // GENUS ICONS
+            .Sativa_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/SAT_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+            .Indica_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/IND_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+            .Hybrid_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/HYB_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+            .Rudalis_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/RUD_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+    
+            // INOUT ICON
+            .Indoor_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/INDO_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+            .Outdoor_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/OD_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+            .Glasshouse_ico:before {
+              content: "";
+              display: block;
+              background: url("/assets/GH_Icon.svg") no-repeat;
+              background-size: contain;
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin: 0 6px 0 0;
+            }
+  
+          }
+  
+  
+  
+          h3 {
+            font-family: "neulis-cursive", serif !important;
+            font-weight: 500;
+            font-size: 1.8rem;
+            color: #F5F5DB;
+            margin: 0 0 .8rem 0;
+          }
+          .progress-ring__circle {
+            transform-origin: center;
+            transform: rotate(-90deg);
+            transition: stroke-dashoffset 0.3s;
+          }
+  
+          .straininfo, .inoutinfo {
+            height: 34px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            line-height: 30px;
+            margin-right: 1rem;
+            font-family: "neulis-cursive", serif;
+            font-weight: 500;
+            .strainicon, .inouticon {
+              width: 24px;
+              height: 24px;
+              margin-bottom: 10px;
+            }
+          }
+  
+        }
+        .sec2 {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          align-items: flex-end;
+          min-height: 80px;
+  
+          .progress-wrapper {
+            width:80px;
+            height:50px;
+            .current {
+              font-size: .8rem;
+              text-align: center;
+              padding-top: 28px;
+              width:80px;
+              height:50px;
+              position: absolute;
+              z-index: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              font-family: "neulis-cursive", serif !important;
+              font-weight: 500;
+              opacity: .5;
+              line-height: .9rem;
+            }
+            .circlebar {
+              position: absolute;
+              z-index: 10;
+            }
+  
+          }
+          
+        }
+        
+      }
+    }
+    
+    #createGrowButon {
+      margin: 0 auto 1rem auto;
+    }
+  
+  }

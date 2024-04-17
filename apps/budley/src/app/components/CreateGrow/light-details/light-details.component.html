@@ -1,0 +1,21 @@
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Lumens</mat-label>
+      <input matInput type="number" formControlName="lumens">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Watts</mat-label>
+      <input matInput type="number" formControlName="watts">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Type of Light</mat-label>
+      <mat-select formControlName="lightType">
+        <mat-option value="LED">LED</mat-option>
+        <mat-option value="HID">HID</mat-option>
+        <mat-option value="Fluorescent">Fluorescent</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+  

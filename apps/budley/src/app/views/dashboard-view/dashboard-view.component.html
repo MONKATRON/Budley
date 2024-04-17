@@ -3,50 +3,5 @@
     <h1>Budley</h1>
 </section>
 <section id="window">
-    <mat-card class="dashboard-card">
-        <mat-card-header>
-            <mat-card-title>Grows</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <mat-list>
-            <mat-list-item *ngFor="let grow of grows">
-                <mat-card class="list-card mat-elevation-z2">
-                    <div class="sec1">
-                        <h3>{{ grow.name }}</h3>
-                        <section class="icongroup">
-                            <div class="straininfo">
-                                <p class="{{ grow.strain }}_ico">{{ grow.strain }}</p>
-                            </div>
-                            <div class="inoutinfo">
-                                <p class="{{ grow.inout }}_ico">{{ grow.inout }}</p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="sec2">
-                        <div class="progress-wrapper">
-                            <div class="current">{{calcDaysUsed(grow.startDate)}}/{{grow.vegTime + grow.flowerTime}}<br>Days</div>
-                                <round-progress id="circlebar"
-                                    [current]="calcDaysUsed(grow.startDate)"
-                                    [max]="(grow.vegTime + grow.flowerTime)"
-                                    [color]="'#546A2F'"
-                                    [background]="'#00180d'"
-                                    [radius]="40"
-                                    [stroke]="10"
-                                    [semicircle]="false"
-                                    [rounded]="true"
-                                    [clockwise]="true"
-                                    [responsive]="false"
-                                    [duration]="800"
-                                    [animation]="'easeInOutQuart'"
-                                    [animationDelay]="500"/>
-                            </div>
-                        </div>
-                </mat-card>
-            </mat-list-item>
-          </mat-list>
-        </mat-card-content>
-        <mat-card-actions>
-        <button mat-raised-button id="createGrowButon" (click)="createGrow()">+</button>
-        </mat-card-actions>
-    </mat-card>
+    <router-outlet></router-outlet>
 </section>

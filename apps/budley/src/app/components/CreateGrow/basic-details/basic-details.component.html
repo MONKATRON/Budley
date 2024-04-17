@@ -1,0 +1,21 @@
+<form [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>Grow Name</mat-label>
+    <input matInput formControlName="growName">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Grow Start Date</mat-label>
+    <input matInput formControlName="growStartDate" [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Seed or Clone</mat-label>
+    <mat-select formControlName="seedOrClone">
+      <mat-option value="Seed">Seed</mat-option>
+      <mat-option value="Clone">Clone</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

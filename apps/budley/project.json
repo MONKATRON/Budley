@@ -25,9 +25,8 @@
           "apps/budley/src/assets"
         ],
         "styles": [
-          "@angular/material/prebuilt-themes/purple-green.css",
-          "apps/budley/src/assets/BudleyAMTheme.scss",
-          "apps/budley/src/styles.scss"
+          "apps/budley/src/styles.scss",
+          "apps/budley/src/assets/BudleyAMTheme.scss"
         ],
         "scripts": []
       },

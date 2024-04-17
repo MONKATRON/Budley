@@ -1,0 +1,47 @@
+<mat-card class="dashboard-card">
+  <mat-card-header>
+      <mat-card-title>New Grow</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-vertical-stepper [linear]="true">
+      <mat-step [stepControl]="basicDetailsForm" label="Basic Details">
+        <budley-basic-details [form]="basicDetailsForm"></budley-basic-details>
+        <button mat-stroked-button matStepperNext>Next</button>
+      </mat-step>
+    
+      <mat-step [stepControl]="strainDetailsForm" label="Strain Details">
+        <budley-strain-details [form]="strainDetailsForm"></budley-strain-details>
+        <button mat-stroked-button matStepperPrevious>Back</button>
+        <button mat-stroked-button matStepperNext>Next</button>
+      </mat-step>
+      
+      <mat-step [stepControl]="roomDetailsForm" label="Room Details">
+        <budley-room-details [form]="roomDetailsForm"></budley-room-details>
+        <button mat-stroked-button matStepperPrevious>Back</button>
+        <button mat-stroked-button matStepperNext>Next</button>
+      </mat-step>
+    
+      <mat-step [stepControl]="lightDetailsForm" label="Light Details">
+        <budley-light-details [form]="lightDetailsForm"></budley-light-details>
+        <button mat-stroked-button matStepperPrevious>Back</button>
+        <button mat-stroked-button matStepperNext>Next</button>
+      </mat-step>
+    
+      <mat-step [stepControl]="feedDetailsForm" label="Feed Details">
+        <budley-feed-details [form]="feedDetailsForm"></budley-feed-details>
+        <button mat-stroked-button matStepperPrevious>Back</button>
+        <button mat-stroked-button matStepperNext>Next</button>
+      </mat-step>
+    
+      <mat-step [stepControl]="soilDetailsForm" label="Soil Details">
+        <budley-medium-details [form]="soilDetailsForm"></budley-medium-details>
+        <button mat-stroked-button matStepperPrevious>Back</button>
+        <button mat-stroked-button matStepperNext>Finish</button>
+      </mat-step>
+    
+    </mat-vertical-stepper>
+    
+  </mat-card-content>
+
+  </mat-card>
+

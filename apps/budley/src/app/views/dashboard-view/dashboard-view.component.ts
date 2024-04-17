@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../material/material.module';
 import { RoundProgressModule } from 'angular-svg-round-progressbar';
+import { RouterModule } from '@angular/router';
 
 export interface GrowData {
   id: number;
@@ -25,7 +26,8 @@ const ELEMENT_DATA: GrowData[] = [
   imports: [
     CommonModule, 
     MaterialModule,
-    RoundProgressModule
+    RoundProgressModule,
+    RouterModule
   ],
   templateUrl: './dashboard-view.component.html',
   styleUrl: './dashboard-view.component.scss',
